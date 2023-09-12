@@ -1,8 +1,10 @@
 {
   "name": "spid-js",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "test",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vitest",
     "test": "vitest run",
@@ -14,6 +16,7 @@
   "author": "Loris Anobile",
   "license": "ISC",
   "devDependencies": {
+    "@changesets/cli": "^2.26.2",
     "@types/node": "^20.6.0",
     "tsup": "^7.2.0",
     "typescript": "^5.2.2",
