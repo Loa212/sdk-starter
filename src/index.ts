@@ -1,1 +1,3 @@
-export const mysdk = () => {};
+export const mysdk = () => {
+  console.log("nope");
+};

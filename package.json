@@ -4,8 +4,10 @@
   "description": "test",
   "main": "index.js",
   "scripts": {
-    "test": "echo \\\"Error: no test specified\\\" && exit 1",
-    "build": "tsup src/index.ts --format cjs, esm --dts"
+    "dev": "vitest",
+    "test": "vitest run",
+    "build": "tsup src/index.ts --format cjs, esm --dts",
+    "lint": "tsc"
   },
   "keywords": [],
   "author": "Loris Anobile",
@@ -13,6 +15,7 @@
   "devDependencies": {
     "@types/node": "^20.6.0",
     "tsup": "^7.2.0",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.4"
   }
 }
